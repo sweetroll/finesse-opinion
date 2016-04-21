@@ -1,0 +1,58 @@
+///
+/// Simple component to display key–value statistic-like information.
+///
+/// @name stats
+/// @group component
+///
+/// @example
+///     <div class="stat-group">
+///         <dl class="stat">
+///             <dt class="stat__title">Tweets</dt>
+///             <dd class="stat__value">27,740</dd>
+///         </dl>
+///
+///         <dl class="stat">
+///             <dt class="stat__title">Following</dt>
+///             <dd class="stat__value">11,529</dd>
+///         </dl>
+///
+///         <dl class="stat">
+///             <dt class="stat__title">Followers</dt>
+///             <dd class="stat__value">12,105</dd>
+///         </dl>
+///    </div>
+///
+
+ .stat-group {
+    @extend .cf;
+    margin-left: -$base-spacing-unit;
+}
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-left: $base-spacing-unit;
+        padding-left: $base-spacing-unit;
+        border-left: $base-border;
+        text-align: center;
+
+        &:first-child {
+            border-left: 0;
+            padding-left: 0;
+        }
+    }
+
+        .stat__title {
+            margin: 0;
+            order: 2;
+            font-weight: normal;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .stat__value {
+            margin-left: 0;
+            order: 1;
+            font-weight: bold;
+        }

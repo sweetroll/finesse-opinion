@@ -1,0 +1,28 @@
+body {
+    font-size: 14px;
+
+    @include media-query(lap) {
+        font-size: 16px;
+    }
+
+    @include media-query(desk) {
+        font-size: 18px;
+    }
+}
+
+h1, .alpha, %alpha { font-size: 2.5em; }
+h2, .beta, %alpha { font-size: 2em; }
+h3, .gamma, %alpha { font-size: 1.75em; }
+h4, .delta, %alpha { font-size: 1.5em; }
+h5, .epsilon, %alpha { font-size: 1.25em; }
+h6, .zeta, %alpha { font-size: 1em; }
+
+.wysiwyg-content {
+    h1 {}
+    h2 {}
+    h3 {}
+    h4 {}
+    h5 {}
+    h6 {}
+    p {}
+}
