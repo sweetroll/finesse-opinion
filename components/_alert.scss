@@ -11,52 +11,44 @@
 ///     </div>
 ///
 
-@if $disable-alert == false {
+@mixin alert($color, $extend: true) {
+    background-color: $color;
 
-.alert {
-    position: relative;
-    padding: $half-spacing-unit;
-    font-size: 14px;
-    line-height: 1.4;
-    background-color: getColor('grey', 'dark');
-    color: #ffffff;
-}
+    @include mixin-dryer('alert', $extend) {
+        position: relative;
+        padding: $half-spacing-unit;
+        line-height: 1.4;
+        color: #FFF;
 
-    .alert__text {
-        margin: 0;
-        padding-right: 40px;
+        .alert__text {
+            margin: 0;
+            padding-right: 40px;
+        }
+
+        .alert__close {
+            position: absolute;
+            top: 0;
+            right: $half-spacing-unit;
+            color: #FFF;
+            font-size: 20px;
+            line-height: 50px;
+        }
     }
-
-    .alert__close {
-        position: absolute;
-        top: 0;
-        right: $half-spacing-unit;
-        color: #ffffff;
-        font-size: 20px;
-        line-height: 40px;
-    }
-
-.alert--info {
-    background-color: $info-color;
 }
 
-.alert--success {
-    background-color: $success-color;
-}
+// WILL WORK WHEN MIXIN INTERPOLATION IS FIXED IN SASS
+// @include colour-it('.alert', 'alert');
 
-.alert--warning {
-    background-color: $warning-color;
-}
-
-.alert--danger {
-    background-color: $danger-color;
-}
+.alert          { @include alert($base-font-color) }
+.alert--info    { @include alert($info-color) }
+.alert--success { @include alert($success-color) }
+.alert--warning { @include alert($warning-color) }
+.alert--danger  { @include alert($danger-color) }
 
 .alert--fixed {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
-}
-
 }

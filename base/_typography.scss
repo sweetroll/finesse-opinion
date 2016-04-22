@@ -10,12 +10,12 @@ body {
     }
 }
 
-h1, .alpha, %alpha { font-size: 2.5em; }
-h2, .beta, %alpha { font-size: 2em; }
-h3, .gamma, %alpha { font-size: 1.75em; }
-h4, .delta, %alpha { font-size: 1.5em; }
-h5, .epsilon, %alpha { font-size: 1.25em; }
-h6, .zeta, %alpha { font-size: 1em; }
+h1, .alpha, %alpha { margin-bottom: 0.5em; font-size: 2.5em; }
+h2, .beta, %alpha { margin-bottom: 0.5em; font-size: 2em; }
+h3, .gamma, %alpha { margin-bottom: 0.5em; font-size: 1.75em; }
+h4, .delta, %alpha { margin-bottom: 0.5em; font-size: 1.5em; }
+h5, .epsilon, %alpha { margin-bottom: 0.5em; font-size: 1.25em; }
+h6, .zeta, %alpha { margin-bottom: 0.5em; font-size: 1em; }
 
 .wysiwyg-content {
     h1 {}

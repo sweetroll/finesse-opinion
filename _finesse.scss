@@ -8,9 +8,9 @@
 /// overwritten should be re-evaluated.
 ///
 @import "base/forms";
-// @import "base/lists";
-// @import "base/tables";
+@import "base/tables";
 @import "base/typography";
+@import "base/buttons";
 
 ///
 /// Components
@@ -18,10 +18,6 @@
 /// for 'quick wins'. Some components provide a modifer class `--finesse` which
 /// will provide a more opinionated design layer on top of the base component.
 ///
-// @import "components/alert";
-// @import "components/card";
-// @import "components/footer";
-// @import "components/modal";
-// @import "components/pagination";
-// @import "components/prototype";
-// @import "components/stats";
+@import "components/alert";
+@import "components/card";
+@import "components/pagination";
