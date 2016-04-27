@@ -1,7 +1,0 @@
-{
-  "name": "finesse-opinion",
-  "version": "1.0.0",
-  "description": "CSS toolkit based on Inuit.css",
-  "main": "_finesse.scss",
-  "license": "MIT"
-}
