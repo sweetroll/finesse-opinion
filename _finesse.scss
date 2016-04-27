@@ -1,11 +1,23 @@
 ///
-/// Base
-/// Our default styling of the most commonly used HTML tags. It uses a modified
-/// version of Bourbon Bitters to add opinionated base styles which our designs
-/// should be aware of.
+/// Tools
 ///
-/// As with the entire framework, any default styling that is continually
-/// overwritten should be re-evaluated.
+// @import "tools/...";
+@import "finesse-core/tools";
+
+///
+/// Settings
+///
+@import "settings/palette";
+@import "finesse-core/palette";
+@import "settings/vars";
+
+///
+/// Finesse toolkit
+///
+@import "finesse-core/finesse";
+
+///
+/// Base
 ///
 @import "base/forms";
 @import "base/tables";
@@ -13,11 +25,45 @@
 @import "base/buttons";
 
 ///
+/// Icons by Grunticon - requires Modernizr
+///
+.svg { @import "../../public/i/icons.data.svg"; }
+.no-svg { @import "../../public/i/icons.fallback"; }
+
+///
+/// Objects
+///
+// @import "objects/...";
+
+///
+/// Third-party stylesheet (from bower/npm etc.)
+///
+// @import "third-party/...";
+
+///
 /// Components
 /// More complete design patterns that can potentially used without modification
-/// for 'quick wins'. Some components provide a modifer class `--finesse` which
-/// will provide a more opinionated design layer on top of the base component.
+/// for 'quick wins'.
 ///
 @import "components/alert";
 @import "components/card";
+@import "components/e7-credit";
+@import "components/page-builder";
 @import "components/pagination";
+
+///
+/// Trumps
+///
+// @import "trumps/...";
+
+///
+/// Shame
+///
+@import "shame";
+
+///
+/// Print styles from html5boilerplate.com
+/// Inlined to avoid the additional HTTP request:
+/// http://www.phpied.com/delay-loading-your-print-css/
+///
+@import "print";

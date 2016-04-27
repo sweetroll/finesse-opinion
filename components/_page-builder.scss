@@ -1,0 +1,21 @@
+// Image & Text
+.page-builder__item--imagetext {
+    @extend .grid;
+}
+
+    .page-builder__image,
+    .page-builder__text {
+        @extend .grid__item;
+        @extend .one-half;
+    }
+
+// Gallery
+.page-builder__gallery {}
+
+    .page-builder__galleryitem {
+        display: inline-block;
+
+        img {
+            display: block;
+        }
+    }

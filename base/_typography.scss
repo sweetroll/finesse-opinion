@@ -10,19 +10,45 @@ body {
     }
 }
 
-h1, .alpha, %alpha { margin-bottom: 0.5em; font-size: 2.5em; }
-h2, .beta, %alpha { margin-bottom: 0.5em; font-size: 2em; }
-h3, .gamma, %alpha { margin-bottom: 0.5em; font-size: 1.75em; }
-h4, .delta, %alpha { margin-bottom: 0.5em; font-size: 1.5em; }
-h5, .epsilon, %alpha { margin-bottom: 0.5em; font-size: 1.25em; }
-h6, .zeta, %alpha { margin-bottom: 0.5em; font-size: 1em; }
+h1, .alpha, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
 
-.wysiwyg-content {
-    h1 {}
-    h2 {}
-    h3 {}
-    h4 {}
-    h5 {}
-    h6 {}
-    p {}
+    .wysiwyg-output & {}
 }
+
+h2, .beta, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+
+    .wysiwyg-output & {}
+}
+
+h3, .gamma, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 1.75em;
+
+    .wysiwyg-output & {}
+}
+
+h4, .delta, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+
+    .wysiwyg-output & {}
+}
+
+h5, .epsilon, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+
+    .wysiwyg-output & {}
+}
+
+h6, .zeta, %alpha {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+
+    .wysiwyg-output & {}
+}
+

@@ -1,0 +1,18 @@
+/*
+E7 Credit
+*/
+
+.e7-credit {
+    font-size: 11px;
+    line-height: 15px;
+    font-family: Arial, sans-serif;
+    color: getColour('grey', 'light');
+}
+.e7-credit__link {
+    color: getColour('grey', 'light');
+
+    &:hover {
+        text-decoration: none;
+        color: getColour('grey', 'light');
+    }
+}
