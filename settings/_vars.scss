@@ -1,4 +1,9 @@
 ///
+/// Default typography font size
+///
+// $base-font-size: 14px;
+
+///
 /// Default typography styles
 ///
 // $base-font-family: Helvetica, sans-serif;
@@ -21,13 +26,13 @@
 // $base-border: 1px solid $base-border-color;
 
 ///
-/// Base background colours
+/// Default background colours
 ///
 // $base-background-color: #fff;
 // $secondary-background-color: getColour('grey', 'light');
 
 ///
-/// Base notification colours
+/// Default notification colours
 ///
 // $info-color: getColour('blue');
 // $success-color: getColour('green');
@@ -35,7 +40,7 @@
 // $danger-color: getColour('red');
 
 ///
-/// Base spacing units
+/// Default spacing units
 ///
 // $base-spacing-unit: $base-line-height * 1em;
 // $half-spacing-unit: $base-spacing-unit / 2;

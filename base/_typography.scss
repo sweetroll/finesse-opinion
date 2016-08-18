@@ -1,5 +1,5 @@
-body {
-    font-size: 14px;
+html {
+    // Default font size is $base-font-size
 
     @include media-query(lap) {
         font-size: 16px;
@@ -11,44 +11,47 @@ body {
 }
 
 h1, .alpha, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 2.5em;
+    margin: 0 0 0.5em;
+    font-size: rem(36px);
 
     .wysiwyg-output & {}
 }
 
 h2, .beta, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 2em;
+    margin: 0 0 0.5em;
+    font-size: rem(30px);
 
     .wysiwyg-output & {}
 }
 
 h3, .gamma, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 1.75em;
+    margin: 0 0 0.5em;
+    font-size: rem(24px);
 
     .wysiwyg-output & {}
 }
 
 h4, .delta, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 1.5em;
+    margin: 0 0 0.5em;
+    font-size: rem(20px);
 
     .wysiwyg-output & {}
 }
 
 h5, .epsilon, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 1.25em;
+    margin: 0 0 0.5em;
+    font-size: rem(18px);
 
     .wysiwyg-output & {}
 }
 
 h6, .zeta, %alpha {
-    margin-bottom: 0.5em;
-    font-size: 1em;
+    margin: 0 0 0.5em;
+    font-size: rem(14px);
 
     .wysiwyg-output & {}
 }
 
+p {
+    margin: 0 0 1em;
+}

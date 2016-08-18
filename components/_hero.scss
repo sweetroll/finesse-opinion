@@ -1,0 +1,15 @@
+.hero {
+    width: 100%;
+    margin-bottom: $base-spacing-unit;
+}
+
+    .hero__item {
+        width: 100%;
+        padding: 150px 0;
+        text-align: center;
+
+        h1 {
+            margin: 0;
+            color: #fff
+        }
+    }

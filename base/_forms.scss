@@ -104,9 +104,10 @@ select:not([multiple]) {
     padding-right: $base-spacing-unit;
 }
 
-.radio-buttons {
+.check-buttons {
     label {
         display: inline-block;
+        font-weight: inherit;
         margin-left: $base-spacing-unit;
 
         &:first-child {

@@ -1,0 +1,8 @@
+.popup {
+    position: relative;
+    background: getColour('white');
+    padding: $base-spacing-unit;
+    width: auto;
+    max-width: 500px;
+    margin: $base-spacing-unit auto;
+}
