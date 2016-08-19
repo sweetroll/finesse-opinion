@@ -3,16 +3,15 @@ E7 Credit
 */
 
 .e7-credit {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 1.25;
     font-family: Arial, sans-serif;
-    color: getColour('grey', 'light');
+    color: getColour('grey');
 }
 .e7-credit__link {
-    color: getColour('grey', 'light');
+    color: inherit;
 
     &:hover {
         text-decoration: none;
-        color: getColour('grey', 'light');
     }
 }

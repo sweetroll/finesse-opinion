@@ -11,47 +11,82 @@ html {
 }
 
 h1, .alpha, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(36px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 h2, .beta, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(30px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 h3, .gamma, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(24px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 h4, .delta, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(20px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 h5, .epsilon, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(18px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 h6, .zeta, %alpha {
-    margin: 0 0 0.5em;
+    margin: 0;
     font-size: rem(14px);
 
-    .wysiwyg-output & {}
+    .wysiwyg-output & {
+        margin: 0.5em 0;
+    }
 }
 
 p {
-    margin: 0 0 1em;
+    margin: 0;
+
+    .wysiwyg-output & {
+        margin: 1em 0;
+    }
+}
+
+.wysiwyg-output {
+    > *:first-child {
+        margin-top: 0;
+    }
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+img {
+    display: block;
+
+    picture & {
+        width: 100%;
+        height: auto;
+    }
 }

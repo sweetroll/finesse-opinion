@@ -18,11 +18,12 @@
     }
 
     @include mixin-dryer('btn', $extend) {
-        padding: 8px 25px;
+        padding: 0.5em 1em;
         color: #FFF;
         border-width: 1px;
         border-style: solid;
         border-radius: $base-border-radius;
+        text-decoration: none;
 
         &:hover {
             cursor: pointer;
@@ -43,7 +44,7 @@
 // WILL WORK WHEN MIXIN INTERPOLATION IS FIXED IN SASS
 // @include colour-it('.btn', 'btn');
 
-.btn          { @include btn($base-font-color) }
+.btn          { @include btn($action-color) }
 .btn--info    { @include btn($info-color) }
 .btn--success { @include btn($success-color) }
 .btn--warning { @include btn($warning-color) }
@@ -55,11 +56,9 @@
 }
 
 .btn--large {
-    padding: 8px 35px;
     font-size: 1.25rem;
 }
 
 .btn--small {
-    padding: 5px 15px;
     font-size: 0.85rem;
 }

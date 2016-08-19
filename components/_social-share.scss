@@ -1,0 +1,25 @@
+.social-share__list {
+    @extend .nav;
+}
+
+.social-share__item {
+    .accessibility {
+        display: none;
+    }
+}
+
+    .social-share__item--facebook {
+        @include icon(facebook-black, 27, 32);
+    }
+
+    .social-share__item--twitter {
+        @include icon(twitter-black, 27, 32);
+    }
+
+    .social-share__item--pinterest {
+        @include icon(pinterest-black, 27, 32);
+    }
+
+    .social-share__item--print {
+        @include icon(print-black, 30, 32);
+    }

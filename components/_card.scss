@@ -30,6 +30,7 @@
 
         img {
             display: block;
+            width: 100%;
             margin: 0 auto;
         }
     }
@@ -40,4 +41,8 @@
         > *:last-child {
             margin-bottom: 0;
         }
+    }
+
+    .card__actions {
+        @extend .nav;
     }

@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     margin-bottom: $base-spacing-unit;
+    background-color: getColour('grey', 'light');
 }
 
     .hero__item {

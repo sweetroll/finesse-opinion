@@ -20,6 +20,10 @@ label {
     margin-bottom: $half-spacing-unit / 2;
 }
 
+.input {
+    margin-bottom: $half-spacing-unit;
+}
+
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
@@ -45,7 +49,6 @@ select[multiple=multiple] {
     box-shadow: inset 0 1px 3px rgba(#000, 0.06);
     box-sizing: border-box;
     font-family: $base-font-family;
-    margin-bottom: $half-spacing-unit;
     padding: $base-spacing-unit / 3;
     transition: border-color 150ms ease;
     width: 100%;
@@ -114,4 +117,12 @@ select:not([multiple]) {
             margin-left: 0;
         }
     }
+}
+
+.form__errors {
+    margin-top: $half-spacing-unit;
+    padding: 0;
+    list-style: none;
+    color: $danger-color;
+    font-size: 0.8rem;
 }
