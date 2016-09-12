@@ -29,7 +29,7 @@ h1, .alpha, %alpha {
     }
 }
 
-h2, .beta, %alpha {
+h2, .beta, %beta {
     margin: 0;
     font-size: rem(30px);
 
@@ -38,7 +38,7 @@ h2, .beta, %alpha {
     }
 }
 
-h3, .gamma, %alpha {
+h3, .gamma, %gamma {
     margin: 0;
     font-size: rem(24px);
 
@@ -47,7 +47,7 @@ h3, .gamma, %alpha {
     }
 }
 
-h4, .delta, %alpha {
+h4, .delta, %delta {
     margin: 0;
     font-size: rem(20px);
 
@@ -56,7 +56,7 @@ h4, .delta, %alpha {
     }
 }
 
-h5, .epsilon, %alpha {
+h5, .epsilon, %epsilon {
     margin: 0;
     font-size: rem(18px);
 
@@ -65,7 +65,7 @@ h5, .epsilon, %alpha {
     }
 }
 
-h6, .zeta, %alpha {
+h6, .zeta, %zeta {
     margin: 0;
     font-size: rem(14px);
 
