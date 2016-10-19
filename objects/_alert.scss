@@ -1,0 +1,51 @@
+///
+/// Coloured notification bar that can be optionally fixed to the viewport.
+///
+/// @name alert
+/// @group objects
+///
+/// @example
+///     <div class="alert">
+///         <p class="alert__text">Alert content here.</p>
+///         <div class="alert__close">&times;</div>
+///     </div>
+///
+
+@mixin alert($color) {
+    background-color: $color;
+}
+
+.alert {
+    position: relative;
+    padding: 0.5em $base-spacing-unit;
+    line-height: 1.4;
+    color: #FFF;
+}
+
+    .alert__text {
+        margin: 0;
+        padding-right: $base-spacing-unit;
+    }
+
+    .alert__close {
+        position: absolute;
+        top: 7px;
+        right: $half-spacing-unit;
+        color: #FFF;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+.alert { @include alert($action-color) }
+.alert--info { @include alert($info-color) }
+.alert--success { @include alert($success-color) }
+.alert--warning { @include alert($warning-color) }
+.alert--danger { @include alert($danger-color) }
+
+.alert--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}

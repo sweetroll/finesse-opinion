@@ -1,6 +1,6 @@
-///
-/// Finesse Opinion 1.0.1
-///
+////
+/// Finesse Opinion 2.1.0
+////
 
 ///
 /// Tools
@@ -10,19 +10,24 @@
 
 ///
 /// Settings
+/// User settings should be declared before finesse-core
+/// and palette adjustments before all other settings.
 ///
 @import "settings/palette";
 @import "finesse-core/palette";
+
 @import "settings/vars";
+@import "finesse-core/settings";
 
 ///
-/// Finesse toolkit
+/// Generic
 ///
-@import "finesse-core/finesse";
+@import "finesse-core/generic";
 
 ///
 /// Base
 ///
+@import "finesse-core/base";
 @import "base/buttons";
 @import "base/forms";
 @import "base/layout";
@@ -30,28 +35,17 @@
 @import "base/typography";
 
 ///
-/// Icons by Grunticon - requires Modernizr
-///
-.svg { @import "../../public/i/icons.data.svg"; }
-.no-svg { @import "../../public/i/icons.fallback"; }
-
-///
 /// Objects
 ///
-// @import "objects/...";
+@import "finesse-core/objects";
+@import "objects/alert";
+@import "objects/lozenge";
 
 ///
-/// Third-party stylesheet (from bower/npm etc.)
-///
-// @import "third-party/...";
-@import "magnific-popup/dist/magnific-popup";
-@import "flickity/dist/flickity";
-///
 /// Components
-/// More complete design patterns that can potentially used without modification
+/// More complete design patterns that can potentially be used without modification
 /// for 'quick wins'.
 ///
-@import "components/alert";
 @import "components/card";
 @import "components/e7-credit";
 @import "components/hero";
@@ -64,6 +58,7 @@
 ///
 /// Trumps
 ///
+@import "finesse-core/trumps";
 // @import "trumps/...";
 
 ///

@@ -1,0 +1,29 @@
+///
+/// Creates a small tag like element for showing state/context. Modifier
+/// classes for each colour in the application are automatically created
+/// however by default the text colour will be white.
+///
+/// @name lozenge
+/// @group objects
+///
+/// @example
+///     <p>This <span class="loz">here</span> is a lozenge!</p>
+///
+
+@mixin lozenge($color) {
+    background-color: $color;
+}
+
+.loz {
+    display: inline-block;
+    padding: 0 .5em;
+    text-align: center;
+    color: #fff;
+    border-radius: $base-border-radius;
+}
+
+.loz { @include lozenge($action-color) }
+.loz--info { @include lozenge($info-color) }
+.loz--success { @include lozenge($success-color) }
+.loz--warning { @include lozenge($warning-color) }
+.loz--danger { @include lozenge($danger-color) }
