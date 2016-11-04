@@ -1,13 +1,5 @@
 html {
     // Default font size is $base-font-size
-
-    @include media-query(lap) {
-        font-size: 16px;
-    }
-
-    @include media-query(desk) {
-        font-size: 18px;
-    }
 }
 
 h1, .alpha, %alpha,
@@ -22,7 +14,7 @@ h6, .zeta, %zeta {
 
 h1, .alpha, %alpha {
     margin: 0;
-    font-size: rem(36px);
+    font-size: 3em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;
@@ -31,7 +23,7 @@ h1, .alpha, %alpha {
 
 h2, .beta, %beta {
     margin: 0;
-    font-size: rem(30px);
+    font-size: 2.25em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;
@@ -40,7 +32,7 @@ h2, .beta, %beta {
 
 h3, .gamma, %gamma {
     margin: 0;
-    font-size: rem(24px);
+    font-size: 1.75em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;
@@ -49,7 +41,7 @@ h3, .gamma, %gamma {
 
 h4, .delta, %delta {
     margin: 0;
-    font-size: rem(20px);
+    font-size: 1.125em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;
@@ -58,7 +50,7 @@ h4, .delta, %delta {
 
 h5, .epsilon, %epsilon {
     margin: 0;
-    font-size: rem(18px);
+    font-size: 1em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;
@@ -67,7 +59,7 @@ h5, .epsilon, %epsilon {
 
 h6, .zeta, %zeta {
     margin: 0;
-    font-size: rem(14px);
+    font-size: 1em;
 
     .wysiwyg-output & {
         margin: 0.5em 0;

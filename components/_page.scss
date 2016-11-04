@@ -1,0 +1,8 @@
+.page {
+    transition: transform 0.25s ease;
+
+    body.mobile-nav-active & {
+        // 2x header padding for equal spacing + hamburger width
+        transform: translateX(calc(-100% + ((#{$base-spacing-unit}*2) + 25px)));
+    }
+}
