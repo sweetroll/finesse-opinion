@@ -1,5 +1,6 @@
 {
     "name": "sweetroll/finesse-opinion",
+    "type": "craft-plugin",
     "require": {
         "composer/installers": "^1.2"
     },
