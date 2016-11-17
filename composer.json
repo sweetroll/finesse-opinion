@@ -2,5 +2,8 @@
     "name": "sweetroll/finesse-opinion",
     "require": {
         "composer/installers": "^1.2"
+    },
+    "extra": {
+        "installer-name": "styles"
     }
 }
