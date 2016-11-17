@@ -1,4 +1,6 @@
 {
     "name": "sweetroll/finesse-opinion",
-    "require": {}
+    "require": {
+        "composer/installers": "^1.2"
+    }
 }
