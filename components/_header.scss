@@ -1,5 +1,7 @@
 .header {
+    position: relative;
     padding: $base-spacing-unit;
+    background-color: $base-background-color;
 }
 
     .header__logo {

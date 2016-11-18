@@ -1,0 +1,51 @@
+.navigation {
+    @include media-query(portable) {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: calc(100vw - ((#{$base-spacing-unit}*2) + 25px));
+        height: 100vh;
+        background-color: $secondary-background-color;
+        overflow: auto;
+    }
+}
+
+    .navigation__list {
+        @include media-query(portable) {
+            padding: $base-spacing-unit;
+        }
+    }
+
+    .navigation__item {
+        @include media-query(portable) {
+            border-bottom: 1px solid darken($secondary-background-color, 10);
+        }
+
+        a {
+            @include media-query(portable) {
+                display: block;
+                padding: $half-spacing-unit 0;
+                text-decoration: none;
+            }
+        }
+    }
+
+.page {
+    @include media-query(portable) {
+        will-change: transform;
+        transition: transform 0.25s ease;
+    }
+}
+
+body.mobile-nav-active {
+    @include media-query(portable) {
+        overflow-y: hidden;
+    }
+
+    .page {
+        // 2x header padding for equal spacing + hamburger width
+        @include media-query(portable) {
+            transform: translateX(calc(-100% + ((#{$base-spacing-unit}*2) + 25px)));
+        }
+    }
+}
