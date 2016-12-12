@@ -3,15 +3,25 @@
         position: fixed;
         top: 0;
         left: 100%;
-        width: calc(100vw - ((#{$base-spacing-unit}*2) + 25px));
+        z-index: 1;
+        width: 100vw;
         height: 100vh;
         background-color: $secondary-background-color;
         overflow: auto;
+        will-change: transform;
+        transition: transform 0.25s ease;
+    }
+
+    body.mobile-nav-active & {
+        @include media-query(portable) {
+            transform: translateX(-100%);
+        }
     }
 }
 
     .navigation__list {
         @include media-query(portable) {
+            margin-top: 3em;
             padding: $base-spacing-unit;
         }
     }
@@ -29,23 +39,3 @@
             }
         }
     }
-
-.page {
-    @include media-query(portable) {
-        will-change: transform;
-        transition: transform 0.25s ease;
-    }
-}
-
-body.mobile-nav-active {
-    @include media-query(portable) {
-        overflow-y: hidden;
-    }
-
-    .page {
-        // 2x header padding for equal spacing + hamburger width
-        @include media-query(portable) {
-            transform: translateX(calc(-100% + ((#{$base-spacing-unit}*2) + 25px)));
-        }
-    }
-}
