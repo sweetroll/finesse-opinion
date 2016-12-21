@@ -23,7 +23,7 @@
     @if $cover { background-size: cover; }
 }
 
-@import "../../public/i/icons.data.svg";
+@import "../../public/styles/icons";
 
 // If legacy browser support is required, include the png
 // fallback icons within modernizr feature classes. eg.
