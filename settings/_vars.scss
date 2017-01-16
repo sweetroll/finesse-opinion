@@ -1,16 +1,15 @@
 ///
 /// Default typography font size
 ///
-// $base-font-size: 14px;
+// $base-font-size: 16px;
 
 ///
 /// Default typography styles
 ///
 // $base-font-family: Helvetica, sans-serif;
-// $base-line-height: 1.5;
+// $base-line-height: 1.375;
 
 $secondary-font-family: Georgia, serif;
-$secondary-line-height: 1.2;
 
 ///
 /// Default font colors
@@ -42,6 +41,6 @@ $secondary-line-height: 1.2;
 ///
 /// Default spacing units
 ///
-// $base-spacing-unit: $base-line-height * 1em;
+// $base-spacing-unit: $base-line-height * 1rem;
 // $half-spacing-unit: $base-spacing-unit / 2;
 // $double-spacing-unit: $base-spacing-unit * 2;
