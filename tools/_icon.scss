@@ -22,10 +22,3 @@
     @if $height { height: #{$height}px; }
     @if $cover { background-size: cover; }
 }
-
-@import "../../public/styles/icons";
-
-// If legacy browser support is required, include the png
-// fallback icons within modernizr feature classes. eg.
-// .svg { @import "../../public/i/icons.data.svg"; }
-// .no-svg { @import "../../public/i/icons.fallback"; }
